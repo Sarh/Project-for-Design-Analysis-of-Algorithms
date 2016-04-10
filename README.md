@@ -1,6 +1,7 @@
 Design and Analysis of Algorithms project
 
 Desired Program Behavior
+
 1 - user prompted to enter a value for N as input
 
 2 - program generates N integers which are either 
