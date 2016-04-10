@@ -20,6 +20,9 @@ void loopVec(std::vector<int> &A);
 
 // General Utils
 int readInt(std::string prompt);
+void writeVect(std::vector<int> &A);
+void writeVect(std::vector<int> &A, double time);
+
 
 
 

@@ -9,6 +9,8 @@
 #include <cstring>
 #include <string>
 #include <stdlib.h>
+#include <fstream>
+
 #include "utils.hpp"
 
 // Swap elements in a vector at A[i] and A[j]
@@ -64,6 +66,33 @@ int readInt(std::string prompt){
 
 		return x;
 }
+
+void writeVect(std::vector<int> &A){
+	std::ofstream file;
+	file.open("output.txt", std::ios::app);
+	file << "Original array: ";
+	for(int i = 0; i < static_cast<int>(A.size()); i++){
+		file << A.at(i) << " ";
+	}
+	file << "\n";
+	file.close();
+
+
+
+}
+void writeVect(std::vector<int> &A, double time){
+	std::ofstream file;
+	file.open("output.txt", std::ios::app);
+	file << "Sorted array ( " << time << " ms ): ";
+	for (int i = 0; i < static_cast<int>(A.size()); i++){
+		file << A.at(i) << " ";
+
+	}
+	file << "\n\n-------------------------------------------------------------\n";
+	file.close();
+
+}
+
 
 
 
